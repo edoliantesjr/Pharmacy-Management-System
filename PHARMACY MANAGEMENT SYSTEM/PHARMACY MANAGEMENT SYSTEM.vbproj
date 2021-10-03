@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51E3A753-0865-4FFD-B9BF-D96DB9F0CA0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PHARMACY_MANAGEMENT_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>PHARMACY_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>PHARMACY MANAGEMENT SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\halet\Desktop\Pharmacy Management System\Installer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PHARMACY MANAGEMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PHARMACY MANAGEMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_caduceus_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C352936DAC1A91E4BB31A4E61FBFDA717D7E33A1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PHARMACY MANAGEMENT SYSTEM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\UI Frameworks\Aforge\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\UI Frameworks\Aforge\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\UI Frameworks\Bunifu\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="BunifuDataViz">
+      <HintPath>..\UI Frameworks\Bunifu\Crack\Bunifu Dataviz Advanced 1.1.1.3\BunifuDataViz.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\UI Frameworks\Bunifu\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI">
+      <HintPath>..\UI Frameworks\Guna\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\UI Frameworks\Guna\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.6.0\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\contact.Designer.vb">
+      <DependentUpon>contact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\contact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\searchSystemAcct.Designer.vb">
+      <DependentUpon>searchSystemAcct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\searchSystemAcct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\selectSource.Designer.vb">
+      <DependentUpon>selectSource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\selectSource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\showRecord.Designer.vb">
+      <DependentUpon>showRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\showRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Billreport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Billreport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\addProduct.Designer.vb">
+      <DependentUpon>addProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\addProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\buyForm.Designer.vb">
+      <DependentUpon>buyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\buyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\discountForm.Designer.vb">
+      <DependentUpon>discountForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\discountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_form.Designer.vb">
+      <DependentUpon>Login_form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main_form.Designer.vb">
+      <DependentUpon>Main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\receiptForm.Designer.vb">
+      <DependentUpon>receiptForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\receiptForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\searchProduct.Designer.vb">
+      <DependentUpon>searchProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\searchProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\System_Acct.Designer.vb">
+      <DependentUpon>System_Acct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\System_Acct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notification.Designer.vb">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\basicQuery.vb" />
+    <Compile Include="Modules\errorSound.vb" />
+    <Compile Include="Modules\notifivcationModule.vb" />
+    <Compile Include="Modules\speechModule.vb" />
+    <Compile Include="Modules\SqlConnection.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modules\pharmacy_dbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pharmacy_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\pharmacy_dbDataSet1.vb">
+      <DependentUpon>pharmacy_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\contact.resx">
+      <DependentUpon>contact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\searchSystemAcct.resx">
+      <DependentUpon>searchSystemAcct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\selectSource.resx">
+      <DependentUpon>selectSource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\showRecord.resx">
+      <DependentUpon>showRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Billreport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Billreport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\addProduct.resx">
+      <DependentUpon>addProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\buyForm.resx">
+      <DependentUpon>buyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\discountForm.resx">
+      <DependentUpon>discountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login_form.resx">
+      <DependentUpon>Login_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main_form.resx">
+      <DependentUpon>Main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\receiptForm.resx">
+      <DependentUpon>receiptForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\searchProduct.resx">
+      <DependentUpon>searchProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\System_Acct.resx">
+      <DependentUpon>System_Acct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notification.resx">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Modules\pharmacy_dbDataSet1.xsc">
+      <DependentUpon>pharmacy_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Modules\pharmacy_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pharmacy_dbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Modules\pharmacy_dbDataSet1.xss">
+      <DependentUpon>pharmacy_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PHARMACY MANAGEMENT SYSTEM_TemporaryKey.pfx" />
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_multiply_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\err.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_pill_480px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_shopping_cart_480px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_add_user_group_man_man_480px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_eye_20px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_hide_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_caduceus_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
